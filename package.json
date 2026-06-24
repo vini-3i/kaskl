@@ -9,5 +9,9 @@
     "start": "npm run start -w server",
     "test": "npm run test -w test"
   },
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
+  },
   "devDependencies": {"concurrently": "^9.1.2"}
 }
