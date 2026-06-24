@@ -1,0 +1,11 @@
+{
+  "name": "@kaskl/test",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w @kaskl/server\" \"npm run dev -w @kaskl/client\"",
+    "test": "node smoke-test.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

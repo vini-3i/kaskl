@@ -1,0 +1,13 @@
+{
+  "name": "kaskl-fullstack",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["client", "server", "test"],
+  "scripts": {
+    "dev": "npm run dev -w test",
+    "build": "npm run build -w client && npm run build -w server",
+    "start": "npm run start -w server",
+    "test": "npm run test -w test"
+  },
+  "devDependencies": {"concurrently": "^9.1.2"}
+}

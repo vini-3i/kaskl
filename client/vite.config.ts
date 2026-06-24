@@ -1,0 +1,2 @@
+import { defineConfig } from 'vite';import react from '@vitejs/plugin-react';import { VitePWA } from 'vite-plugin-pwa';
+export default defineConfig({plugins:[react(),VitePWA({registerType:'autoUpdate',manifest:{name:'Kaskl Vendas',short_name:'Kaskl',theme_color:'#020202',background_color:'#020202',display:'standalone',icons:[{src:'/icon.svg',sizes:'any',type:'image/svg+xml'}]}})],server:{host:'0.0.0.0',port:3000,strictPort:true,proxy:{'/api':'http://localhost:3001'}}});
